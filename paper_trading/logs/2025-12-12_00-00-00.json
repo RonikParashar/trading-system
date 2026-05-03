@@ -1,0 +1,16 @@
+{
+  "date": "2025-12-12 00:00:00",
+  "equity": 100000.0,
+  "cash": 75808.400390625,
+  "positions": {
+    "AXISBANK.NS": 7,
+    "HDFCBANK.NS": 6,
+    "HINDUNILVR.NS": 4
+  },
+  "trades": {
+    "AXISBANK.NS": 7,
+    "HDFCBANK.NS": 6,
+    "HINDUNILVR.NS": 4
+  },
+  "gross_exposure": 0.24191599609375
+}

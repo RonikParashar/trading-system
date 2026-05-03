@@ -1,0 +1,14 @@
+{
+  "date": "2026-04-30 00:00:00",
+  "equity": 100000,
+  "cash": 100000,
+  "positions": {
+    "TCS.NS": 1,
+    "INFY.NS": 2,
+    "AXISBANK.NS": 3,
+    "ICICIBANK.NS": 2,
+    "HDFCBANK.NS": 4,
+    "HINDUNILVR.NS": 1
+  },
+  "gross_exposure": 0.16592
+}

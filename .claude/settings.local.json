@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find . -type f -name *.py -o -name *.md -o -name *.txt -o -name *.json -o -name *.env*)",
+      "Bash(python:*)",
+      "Bash(ls:*)",
+      "Bash(\"D:/trading-system/venv/Scripts/python.exe\" \"validate/validate_phase2.py\"')",
+      "Bash(\"D:/trading-system/venv/Scripts/python.exe\" \"D:/trading-system/validate/validate_phase2.py\")",
+      "Bash(\"D:/trading-system/venv/Scripts/python.exe\" -m validate.validate_phase2)",
+      "Bash(\"D:/trading-system/venv/Scripts/python.exe\" -c \":*)",
+      "Bash(\"D:/trading-system/venv/Scripts/activate\")",
+      "Bash(\"D:/trading-system/venv/Scripts/python.exe\" \"test_model_local.py\")",
+      "Bash(\"D:/trading-system/venv/Scripts/python.exe\" -c \"from validate.validate_phase2 import main; main\\(\\)\")",
+      "Bash(\"D:/trading-system/venv/Scripts/python.exe\" \"run_paper_daily.py\")"
+    ]
+  }
+}

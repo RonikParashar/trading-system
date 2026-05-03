@@ -1,0 +1,19 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Data
+*.csv
+*.parquet
+
+# Logs
+logs/
+paper_trading/logs/
+
+# State files
+portfolio_state.json
+
+# OS
+.DS_Store
+Thumbs.db

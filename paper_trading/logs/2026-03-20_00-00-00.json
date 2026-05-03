@@ -1,0 +1,14 @@
+{
+  "date": "2026-03-20 00:00:00",
+  "equity": 100000.0,
+  "cash": 70859.35040283203,
+  "positions": {
+    "HDFCBANK.NS": 12,
+    "ITC.NS": 33,
+    "RELIANCE.NS": 7
+  },
+  "trades": {
+    "RELIANCE.NS": 7
+  },
+  "gross_exposure": 0.29140649597167967
+}
