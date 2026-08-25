@@ -145,6 +145,8 @@ for ticker, df in price_data.items():
     else:
         price_data_filtered[ticker] = df
 
+scores_filtered = scores_filtered.shift(2)       
+
 portfolio = run_portfolio_backtest(
     price_data=price_data_filtered,
     scores=scores_filtered,

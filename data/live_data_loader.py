@@ -63,3 +63,21 @@ def load_live_prices(
             print(f"[ERROR] Failed to load {ticker}: {e}")
 
     return price_data
+
+
+def load_live_data(tickers: List[str] = None, lookback_days: int = DEFAULT_LOOKBACK_DAYS) -> dict:
+    """
+    Main data loader function.
+
+    Args:
+        tickers: List of stock tickers (optional, defaults to predefined list)
+        lookback_days: Number of days of historical data to fetch
+
+    Returns:
+        price_data: Dict of ticker -> price DataFrame
+    """
+    if tickers is None:
+        # Default watchlist
+        tickers = ['AAPL', 'GOOGL', 'MSFT', 'AMZN', 'META', 'NVDA', 'TSLA', 'AMD']
+
+    return load_live_prices(tickers=tickers, lookback_days=lookback_days)

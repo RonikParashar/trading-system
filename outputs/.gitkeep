@@ -1,0 +1,5 @@
+# Outputs directory for daily signals
+# This directory will contain:
+# - prediction_results.csv
+# - signal_summary.csv
+# - portfolio_weights.csv

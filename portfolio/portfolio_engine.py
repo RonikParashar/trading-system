@@ -187,11 +187,21 @@ def run_portfolio_backtest(
                     trade_fraction=trade_fraction
                 )
 
+        # # ============================
+        # # Portfolio Return (Open→Open)
+        # # ============================
+        # for t, w in blended_weights.items():
+        #     df = price_data[t]
+        #     raw_ret = (df.loc[date, "Open"] / df.loc[prev_date, "Open"]) - 1
+        #     portfolio_ret += w * raw_ret
+
         # ============================
         # Portfolio Return (Open→Open)
         # ============================
         for t, w in blended_weights.items():
             df = price_data[t]
+            if date not in df.index or prev_date not in df.index:
+                continue
             raw_ret = (df.loc[date, "Open"] / df.loc[prev_date, "Open"]) - 1
             portfolio_ret += w * raw_ret
 

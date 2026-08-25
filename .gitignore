@@ -4,16 +4,16 @@ __pycache__/
 *.pyc
 
 # Data
-*.csv
 *.parquet
 
-# Logs
-logs/
-paper_trading/logs/
-
-# State files
-portfolio_state.json
 
 # OS
 .DS_Store
 Thumbs.db
+
+# Trading outputs
+outputs/*.csv
+outputs/*.json
+
+# Jupyter
+.ipynb_checkpoints/

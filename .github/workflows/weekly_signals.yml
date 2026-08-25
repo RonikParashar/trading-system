@@ -1,0 +1,46 @@
+name: Weekly Factor Trading Signal
+
+on:
+  schedule:
+    # Every Saturday at 8:00 AM IST (2:30 UTC) -- markets are closed
+    # over the weekend, so this uses Friday's closing data
+    - cron: "30 2 * * 6"
+  workflow_dispatch:  # allows manual run from the Actions tab
+
+permissions:
+  contents: write  # needed to commit the updated paper trading state back
+
+jobs:
+  run-weekly-signal:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install pandas numpy pyyaml yfinance matplotlib
+
+      - name: Run weekly factor signal + paper trade update
+        run: python -m live.generate_weekly_signal
+
+      - name: Commit updated paper trading state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add paper_trading/portfolio_state.json paper_trading/logs/ outputs/
+          git diff --staged --quiet || git commit -m "Weekly signal + paper trade update $(date +%Y-%m-%d)"
+          git push
+
+      - name: Save output artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: weekly-signal
+          path: outputs/
