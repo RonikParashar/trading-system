@@ -1,11 +1,9 @@
 {
-  "equity": 99995.79630004884,
-  "cash": 95792.09634887696,
+  "equity": 100019.43363665772,
+  "cash": 98056.73362445069,
   "positions": {
-    "ICICIBANK.NS": 1,
-    "COALINDIA.NS": 3,
     "TATASTEEL.NS": 4,
-    "BEL.NS": 2
+    "COALINDIA.NS": 3
   },
-  "date": "2026-08-24 00:00:00"
+  "date": "2026-08-27 00:00:00"
 }
