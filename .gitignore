@@ -12,8 +12,7 @@ __pycache__/
 Thumbs.db
 
 # Trading outputs
-outputs/*.csv
-outputs/*.json
+
 
 # Jupyter
 .ipynb_checkpoints/
