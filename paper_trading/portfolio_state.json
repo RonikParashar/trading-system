@@ -1,14 +1,16 @@
 {
-  "equity": 100040.38086235047,
-  "cash": 92887.630969162,
+  "equity": 99986.69867405701,
+  "cash": 91404.34863743592,
   "positions": {
-    "TATASTEEL.NS": 5,
-    "COALINDIA.NS": 2,
-    "NTPC.NS": 2,
+    "SBIN.NS": 1,
+    "COALINDIA.NS": 1,
+    "NTPC.NS": 3,
     "BEL.NS": 3,
+    "KOTAKBANK.NS": 2,
+    "TATASTEEL.NS": 4,
     "POWERGRID.NS": 3,
-    "CIPLA.NS": 1,
-    "RELIANCE.NS": 1
+    "ONGC.NS": 5,
+    "CIPLA.NS": 1
   },
-  "date": "2026-09-04 00:00:00"
+  "date": "2026-09-11 00:00:00"
 }
