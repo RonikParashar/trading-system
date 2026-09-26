@@ -1,14 +1,16 @@
 {
-  "equity": 99893.5814710846,
-  "cash": 93276.56160414124,
+  "equity": 99930.25846559144,
+  "cash": 91647.0784118805,
   "positions": {
+    "ICICIBANK.NS": 1,
     "SBIN.NS": 1,
+    "COALINDIA.NS": 1,
     "TATASTEEL.NS": 4,
-    "NTPC.NS": 3,
-    "CIPLA.NS": 1,
+    "NTPC.NS": 4,
     "ONGC.NS": 4,
-    "POWERGRID.NS": 3,
-    "BEL.NS": 2
+    "BEL.NS": 2,
+    "POWERGRID.NS": 4,
+    "ETERNAL.NS": 2
   },
-  "date": "2026-09-18 00:00:00"
+  "date": "2026-09-25 00:00:00"
 }
