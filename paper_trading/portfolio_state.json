@@ -1,12 +1,15 @@
 {
-  "equity": 99668.33591444397,
-  "cash": 95595.23587782288,
+  "equity": 99755.01264726257,
+  "cash": 92031.81260453796,
   "positions": {
-    "ICICIBANK.NS": 1,
-    "KOTAKBANK.NS": 1,
-    "COALINDIA.NS": 1,
+    "KOTAKBANK.NS": 2,
+    "COALINDIA.NS": 2,
     "SBIN.NS": 1,
-    "NTPC.NS": 3
+    "NTPC.NS": 4,
+    "TATASTEEL.NS": 5,
+    "HINDALCO.NS": 1,
+    "ONGC.NS": 6,
+    "ETERNAL.NS": 2
   },
-  "date": "2026-10-09 00:00:00"
+  "date": "2026-10-16 00:00:00"
 }
